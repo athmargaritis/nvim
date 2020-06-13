@@ -1,4 +1,4 @@
-# Nvim Mach 2
+# Nvim RG Mach 2
 
 ![Nvim Mach 2 pic](./utils/images/nvim.png)
 
