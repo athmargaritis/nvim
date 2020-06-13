@@ -32,15 +32,14 @@
     "graphql",
     "html",
     "yaml",
-    "json",
-    "python"
+    "json"
   ],
   "coc.preferences.hoverTarget": "float",
 
   // python config
   "python.linting.enabled": true,
-  "python.linting.pylintEnabled": true,
-  "python.formatting.provider": "black",
+  "python.linting.pylintEnabled": false,
+  "python.formatting.provider": "autopep8",
   "python.formatting.blackPath": "~/.miniconda/envs/neovim/bin/black",
   // "python.linting.pylintPath": "~/.miniconda/envs/neovim/bin/pylint",
   "python.condaPath": "~/.miniconda/bin/conda",

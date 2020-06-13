@@ -13,6 +13,7 @@ if !exists('g:vscode')
   set mouse=a                             " Enable your mouse
   set splitbelow                          " Horizontal splits will automatically be below
   set splitright                          " Vertical splits will automatically be to the right
+  set diffopt+=vertical                   " Vertical split for diff
   set t_Co=256                            " Support 256 colors
   set conceallevel=0                      " So that I can see `` in markdown files
   set tabstop=2                           " Insert 2 spaces for a tab
@@ -23,6 +24,7 @@ if !exists('g:vscode')
   set autoindent                          " Good auto indent
   set laststatus=2                        " Always display the status line
   set number                              " Line numbers
+  set relativenumber                      " Relative numbers
   set cursorline                          " Enable highlighting of the current line
   set background=dark                     " tell vim what the background color looks like
   set showtabline=2                       " Always show tabs 
@@ -44,6 +46,9 @@ if !exists('g:vscode')
   " au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+  " LaTeX is Slow
+  autocmd FileType tex :NoMatchParen
+  au FileType tex setlocal nocursorline
 
   " You can't stop me
   cmap w!! w !sudo tee %

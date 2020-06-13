@@ -5,6 +5,7 @@ imap <C-k> <C-w>k
 imap <C-l> <C-w>l
 " g Leader key
 let mapleader=" "
+let localleader=","
 " let localleader=" "
 nnoremap <Space> <Nop>
 
@@ -74,5 +75,10 @@ else
   nnoremap <silent> <M-k>    :resize +2<CR>
   nnoremap <silent> <M-h>    :vertical resize -2<CR>
   nnoremap <silent> <M-l>    :vertical resize +2<CR>
+
+  " Quickly insert an empty new line without entering insert mode
+  nnoremap <Leader>o o<Esc>
+  nnoremap <Leader>O O<Esc>
+
 endif
 
