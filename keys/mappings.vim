@@ -90,5 +90,8 @@ else
   autocmd FileType python nnoremap ]c :IPythonCellNextCell<Enter>
   autocmd FileType python nnoremap [c :IPythonCellPrevCell<Enter>
 
+  " Python format
+  autocmd FileType python nnoremap <C-i> :call CocAction('format')<Enter>
+
 endif
 
