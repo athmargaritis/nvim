@@ -80,5 +80,15 @@ else
   nnoremap <Leader>o o<Esc>
   nnoremap <Leader>O O<Esc>
 
+  " IPython cell mappings
+  autocmd FileType python nnoremap ;<Enter> :IPythonCellExecuteCell<Enter>
+  autocmd FileType python nnoremap <F5> :IPythonCellRunTime<Enter>
+  autocmd FileType python nnoremap ;c :IPythonCellExecuteCellJump<Enter>
+  autocmd FileType python nnoremap ;l :IPythonCellClear<Enter>
+  autocmd FileType python nnoremap ;x :IPythonCellClose<Enter>
+  autocmd FileType python nnoremap ;R :IPythonCellRestart<Enter>
+  autocmd FileType python nnoremap ]c :IPythonCellNextCell<Enter>
+  autocmd FileType python nnoremap [c :IPythonCellPrevCell<Enter>
+
 endif
 
