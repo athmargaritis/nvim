@@ -34,7 +34,7 @@ if !exists('g:vscode')
   set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
   set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
   set updatetime=300                      " Faster completion
-  set timeoutlen=100                      " By default timeoutlen is 1000 ms
+  set timeoutlen=500                      " By default timeoutlen is 1000 ms
   set clipboard=unnamedplus               " Copy paste between vim and everything else
   set incsearch
   set guifont=Hack\ Nerd\ Font
@@ -49,6 +49,24 @@ if !exists('g:vscode')
   " LaTeX is Slow
   autocmd FileType tex :NoMatchParen
   au FileType tex setlocal nocursorline
+
+
+  " Folding
+  autocmd BufEnter *.tex set foldmethod=expr
+  autocmd BufEnter *.tex set foldexpr=vimtex#fold#level(v:lnum)
+  autocmd BufEnter *.tex set foldtext=vimtex#fold#text()
+  " Custom Folding for python
+  function! BlockFolds()
+     let thisline = getline(v:lnum)
+     if match(thisline, '^# %%') >= 0
+        return ">1"
+     else
+        return "="
+     endif
+  endfunction
+
+  autocmd BufEnter *.py set foldmethod=expr
+  autocmd BufEnter *.py set foldexpr=BlockFolds()
 
   " You can't stop me
   cmap w!! w !sudo tee %

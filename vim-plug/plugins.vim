@@ -92,9 +92,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Interactive code
     Plug 'ChristianChiarulli/codi.vim'
     " Vim Wiki
-    " Plug 'https://github.com/vimwiki/vimwiki.git'
+    Plug 'https://github.com/vimwiki/vimwiki.git'
+
+    " Ipython - slime
     Plug 'jpalardy/vim-slime', { 'for': 'python' }
     Plug 'hanschen/vim-ipython-cell', { 'for': 'python' }
+
+    " LaTeX
+    Plug 'lervag/vimtex'
+
+    " tex conceal
+    Plug 'KeitaNakamura/tex-conceal.vim'
+
+    " Markdown
+    Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+    Plug 'mzlogin/vim-markdown-toc'
 
   endif
 

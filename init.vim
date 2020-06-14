@@ -40,6 +40,9 @@ else
   source $HOME/.config/nvim/plug-config/floaterm.vim
   source $HOME/.config/nvim/plug-config/vista.vim
   source $HOME/.config/nvim/plug-config/vim-slime-ipython.vim
+  source $HOME/.config/nvim/plug-config/vimtex.vim
+  source $HOME/.config/nvim/plug-config/tex-conceal.vim
+  source $HOME/.config/nvim/plug-config/livemarkdown.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
   " source $HOME/.config/nvim/plug-config/easymotion.vim
 endif
