@@ -33,9 +33,9 @@ else
   " nnoremap <c-u> viwU<Esc>
 
   " TAB in general mode will move to text buffer
-  nnoremap <silent> <TAB> :bnext<CR>
+  nnoremap <silent> <TAB> :tabnext<CR>
   " SHIFT-TAB will go back
-  nnoremap <silent> <S-TAB> :bprevious<CR>
+  nnoremap <silent> <S-TAB> :tabprevious<CR>
 
   " Move selected line / block of text in visual mode
   " shift + k to move up
@@ -91,7 +91,7 @@ else
   autocmd FileType python nnoremap [c :IPythonCellPrevCell<Enter>
 
   " Python format
-  autocmd FileType python nnoremap <C-i> :call CocAction('format')<Enter>
+  autocmd FileType python nnoremap <C-f> :call CocAction('format')<Enter>
 
 endif
 

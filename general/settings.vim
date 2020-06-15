@@ -15,7 +15,7 @@ if !exists('g:vscode')
   set splitright                          " Vertical splits will automatically be to the right
   set diffopt+=vertical                   " Vertical split for diff
   set t_Co=256                            " Support 256 colors
-  set conceallevel=0                      " So that I can see `` in markdown files
+  " set conceallevel=0                      " So that I can see `` in markdown files
   set tabstop=2                           " Insert 2 spaces for a tab
   set shiftwidth=2                        " Change the number of space characters inserted for indentation
   set smarttab                            " Makes tabbing smarter will realize you have 2 vs 4
@@ -34,7 +34,7 @@ if !exists('g:vscode')
   set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
   set signcolumn=yes                      " Always show the signcolumn, otherwise it would shift the text each time
   set updatetime=300                      " Faster completion
-  set timeoutlen=500                      " By default timeoutlen is 1000 ms
+  set timeoutlen=300                      " By default timeoutlen is 1000 ms
   set clipboard=unnamedplus               " Copy paste between vim and everything else
   set incsearch
   set guifont=Hack\ Nerd\ Font

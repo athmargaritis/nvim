@@ -6,7 +6,7 @@
     \   'headers': 1,
     \   'text_objs': 1,
     \   'table_format': 1,
-    \   'table_mappings': 1,
+    \   'table_mappings': 0,
     \   'lists': 1,
     \   'links': 1,
     \   'html': 1,
@@ -49,7 +49,6 @@ let g:vimwiki_list = [{'path': '~/vimwiki',
 " let g:vimwiki_listsyms = '✗○◐●✓'
 " let g:vimwiki_global_ext = 1
 " let g:vimwiki_hl_cb_checked = 0
-
 
 
 
