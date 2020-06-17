@@ -93,5 +93,8 @@ else
   " Python format
   autocmd FileType python nnoremap <C-f> :call CocAction('format')<Enter>
 
+  " vimwiki contents
+  map <leader>toc :call vimwiki#base#table_of_contents(1)<CR>
+
 endif
 
