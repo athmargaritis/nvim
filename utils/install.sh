@@ -65,7 +65,7 @@ installcocextensions() { \
 
 cloneconfig() { \
   echo "Cloning Nvim Mach 2 configuration"
-  git clone https://github.com/argapost/nvim.git ~/.config/nvim
+  git clone https://github.com/athmargaritis/nvim.git ~/.config/nvim
 }
 
 moveoldnvim() { \
