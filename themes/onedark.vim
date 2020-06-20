@@ -1,13 +1,13 @@
 " onedark.vim override: Don't set a background color when running in a terminal;
-" if (has("autocmd") && !has("gui_running"))
-"   augroup colorset
-"     autocmd!
-"     let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
-"     autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
-"   augroup END
-" endif
+ if (has("autocmd") && !has("gui_running"))
+   augroup colorset
+     autocmd!
+     let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
+     autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+   augroup END
+ endif
 
-"autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
+autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " `bg` will not be styled since there is no `bg` setting
 
 hi Comment cterm=italic
 let g:onedark_hide_endofbuffer=1
@@ -15,15 +15,15 @@ let g:onedark_terminal_italics=1
 let g:onedark_termcolors=256
 
 "onedark.vim override: Set a custom background color in the terminal
-if (has("autocmd") && !has("gui_running"))
-  augroup colors
-    autocmd!
-    let s:background = { "gui": "#00282C34", "cterm": "235", "cterm16": "0" }
-    autocmd ColorScheme * call onedark#set_highlight("Normal", { "bg": s:background }) "No `fg` setting
-  augroup END
-endif
+" if (has("autocmd") && !has("gui_running"))
+"   augroup colors
+"     autocmd!
+"     let s:background = { "gui": "#00282C34", "cterm": "235", "cterm16": "0" }
+"     autocmd ColorScheme * call onedark#set_highlight("Normal", { "bg": s:background }) "No `fg` setting
+"   augroup END
+" endif
 syntax on
-colorscheme onedark
+colorscheme onedark 
 
 
 " checks if your terminal has 24-bit color support
