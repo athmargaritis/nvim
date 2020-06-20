@@ -40,11 +40,11 @@
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/home/argyris/.local/bin/black",
+  "python.formatting.blackPath": "/Users/athmargaritis/Library/Python/3.7/bin/black",
   // "python.linting.pylintPath": "~/.miniconda/envs/neovim/bin/pylint",
   "python.condaPath": "~/.miniconda/bin/conda",
-  "python.sortImports.path": "/home/argyris/.local/bin/isort",
-  "python.jediPath": "/home/argyris/.local/lib/python3.8/site-packages",
+  "python.sortImports.path": "/Users/athmargaritis/Library/Python/3.7/bin/isort",
+  "python.jediPath": "/Users/athmargaritis/Library/Python/3.7/lib/python/site-packages",
 
   // snippets
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
