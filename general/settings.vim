@@ -1,6 +1,16 @@
 set iskeyword+=-                      	" treat dash separated words as a word text object"
 set formatoptions-=cro                  " Stop newline continution of comments
 
+:command Wqa wqa
+:command WQa wqa
+:command WQA wqa
+:command Wq  wq 
+:command WQ  wq 
+:command Wa  wa 
+:command WA  wq 
+:command Qa  qa 
+:command QA  qa 
+
 if !exists('g:vscode')
   syntax enable                           " Enables syntax highlighing
   set hidden                              " Required to keep multiple buffers open multiple buffers
