@@ -47,7 +47,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'alvan/vim-closetag'
     " Themes
     Plug 'christianchiarulli/onedark.vim'
-    " Plug 'kaicataldo/material.vim'
+    Plug 'arcticicestudio/nord-vim'
+    Plug 'kaicataldo/material.vim'
+    Plug 'https://github.com/lifepillar/vim-solarized8'
     " Plug 'NLKNguyen/papercolor-theme'
     " Plug 'tomasiser/vim-code-dark'
     " Intellisense
