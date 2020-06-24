@@ -11,7 +11,7 @@ autocmd ColorScheme * call onedark#set_highlight("Normal", { "fg": s:white }) " 
 
 hi Comment cterm=italic
 let g:onedark_hide_endofbuffer=1
-let g:onedark_terminal_italics=1
+let g:onedark_terminal_italics=0
 let g:onedark_termcolors=256
 
 "onedark.vim override: Set a custom background color in the terminal
@@ -26,8 +26,8 @@ syntax on
 colorscheme onedark 
 
 
-" " checks if your terminal has 24-bit color support
-" if (has("termguicolors"))
-"     set termguicolors
-"     hi LineNr ctermbg=NONE guibg=NONE
-" endif
+" checks if your terminal has 24-bit color support
+if (has("termguicolors"))
+   set termguicolors
+   hi LineNr ctermbg=NONE guibg=NONE
+endif
