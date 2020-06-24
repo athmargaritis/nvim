@@ -49,12 +49,13 @@ if !exists('g:vscode')
   set incsearch
   set guifont=Hack\ Nerd\ Font
   let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  set notermguicolors
+  set termguicolors
   set guicursor=
   " set mmp=1300
-  " set autochdir                           " Your working directory will always be the same as your working directory
-  " set foldcolumn=2                        " Folding abilities
-
+  set autochdir                           " Your working directory will always be the same as your working directory
+  set foldcolumn=2                        " Folding abilities
+  set scrolloff=15
+  
   " au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
