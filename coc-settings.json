@@ -32,7 +32,9 @@
     "graphql",
     "html",
     "yaml",
-    "json"
+    "json",
+    "python",
+    "fortran"
   ],
   "coc.preferences.hoverTarget": "float",
 
