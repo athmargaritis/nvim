@@ -20,7 +20,7 @@ if exists('g:vscode')
 else
   " ordinary neovim
   source $HOME/.config/nvim/themes/syntax.vim
-  source $HOME/.config/nvim/themes/onedark.vim
+  source $HOME/.config/nvim/themes/nvcode.vim
   source $HOME/.config/nvim/themes/airline.vim
   source $HOME/.config/nvim/plug-config/rnvimr.vim
   source $HOME/.config/nvim/plug-config/vifm.vim
@@ -31,13 +31,13 @@ else
   source $HOME/.config/nvim/plug-config/quickscope.vim
   source $HOME/.config/nvim/plug-config/vim-wiki.vim
   source $HOME/.config/nvim/plug-config/sneak.vim
-  source $HOME/.config/nvim/plug-config/coc.vim
   source $HOME/.config/nvim/plug-config/goyo.vim
   source $HOME/.config/nvim/plug-config/vim-rooter.vim
   source $HOME/.config/nvim/plug-config/start-screen.vim
   source $HOME/.config/nvim/plug-config/gitgutter.vim
   source $HOME/.config/nvim/plug-config/closetags.vim
   source $HOME/.config/nvim/plug-config/floaterm.vim
+  source $HOME/.config/nvim/plug-config/coc.vim
   source $HOME/.config/nvim/plug-config/vista.vim
   source $HOME/.config/nvim/plug-config/vim-slime-ipython.vim
   source $HOME/.config/nvim/plug-config/vimtex.vim
@@ -45,14 +45,15 @@ else
   source $HOME/.config/nvim/plug-config/livemarkdown.vim
   luafile $HOME/.config/nvim/lua/plug-colorizer.lua
   " source $HOME/.config/nvim/plug-config/easymotion.vim
+  " source $HOME/.config/nvim/plug-config/minibufexpl.vim
 endif
 
 " Experimental
 
-if !empty(glob("./paths.vim"))
-  source $HOME/.config/nvim/paths.vim
-endif
-let g:polyglot_disabled = ['csv']
+" if !empty(glob("./paths.vim"))
+"   source $HOME/.config/nvim/paths.vim
+" endif
+" let g:polyglot_disabled = ['csv']
 
 " Python
 " https://realpython.com/python-debugging-pdb/ " breakpoint syntax is really cool

@@ -24,6 +24,24 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'airblade/vim-rooter'
   " auto set indent settings
   Plug 'tpope/vim-sleuth'
+  " Smart abbreviation/substitution/coercion
+  Plug 'tpope/vim-abolish'
+  " Fast fold
+  Plug 'Konfekt/FastFold'
+  " Python folding
+  Plug 'tmhedberg/SimpylFold'
+  " Fortran90
+  Plug 'rudrab/vimf90'
+  let g:VimF90Linter=2
+  " MiniBufExplorer
+  " Plug 'weynhamz/vim-plugin-minibufexpl'
+  " Ultisnips
+  " Plug 'SirVer/ultisnips'
+  " NerdTree
+  Plug 'preservim/nerdtree'
+  " Telescope
+  Plug 'nvim-telescope/telescope.nvim'
+
 
   if exists('g:vscode')
     " Easy motion for VSCode
@@ -46,14 +64,19 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Closetags
     Plug 'alvan/vim-closetag'
     " Themes
-    Plug 'christianchiarulli/onedark.vim'
+    Plug 'joshdick/onedark.vim'
+    Plug 'christianchiarulli/nvcode-color-schemes.vim'
+    " Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'arcticicestudio/nord-vim'
     Plug 'kaicataldo/material.vim'
-    Plug 'https://github.com/lifepillar/vim-solarized8'
+    Plug 'lifepillar/vim-solarized8'
+  Plug 'gruvbox-community/gruvbox'
     " Plug 'NLKNguyen/papercolor-theme'
     " Plug 'tomasiser/vim-code-dark'
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    " coc-python
+    Plug 'neoclide/coc-python'
     " Status Line
     Plug 'vim-airline/vim-airline'
     " Plug 'vim-airline/vim-airline-themes'
@@ -92,7 +115,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Echo doc
     " Plug 'Shougo/echodoc.vim'
     " Interactive code
-    Plug 'ChristianChiarulli/codi.vim'
+    Plug 'metakirby5/codi.vim'
     " Vim Wiki
     Plug 'https://github.com/vimwiki/vimwiki.git'
 

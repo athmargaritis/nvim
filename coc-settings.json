@@ -42,11 +42,16 @@
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/Users/athmargaritis/Library/Python/3.7/bin/black",
-  // "python.linting.pylintPath": "~/.miniconda/envs/neovim/bin/pylint",
+  "python.linting.pylintArgs": [
+    "--ignored-modules=numpy",
+    "--ignored-classes=numpy",
+    "--extension-pkg-whitelist=numpy"
+  ],
+  "python.formatting.blackPath": "/usr/local/bin/black",
+  "python.linting.pylintPath": "/usr/local/bin/pylint",
   "python.condaPath": "~/.miniconda/bin/conda",
-  "python.sortImports.path": "/Users/athmargaritis/Library/Python/3.7/bin/isort",
-  "python.jediPath": "/Users/athmargaritis/Library/Python/3.7/lib/python/site-packages",
+  "python.sortImports.path": "/usr/local/bin/isort",
+  "python.jediPath": "/usr/local/lib/python3.9/site-packages",
 
   // snippets
   "snippets.ultisnips.directories": ["UltiSnips", "~/.config/nvim/snips"],
@@ -74,6 +79,11 @@
       "args": ["start"],
       "filetypes": ["sh"],
       "ignoredRootPaths": ["~"]
+    },
+    "fortran": {
+      "command": "fortls",
+      "filetypes": ["fortran"],
+      "rootPatterns": [".fortls", ".git/"]
     }
   }
 

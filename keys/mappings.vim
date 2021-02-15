@@ -15,7 +15,7 @@ vnoremap > >gv
 
 if exists('g:vscode')
 
-  " Simulate same TAB behavior in VSCode
+  " Simulate same Tab behavior in VSCode
   nmap <Tab> :Tabnext<CR>
   nmap <S-Tab> :Tabprev<CR>
 
@@ -34,10 +34,14 @@ else
   " inoremap <c-u> <ESC>viwUi
   " nnoremap <c-u> viwU<Esc>
 
-  " TAB in general mode will move to text buffer
-  nnoremap <silent> <Tab> :tabnext<CR>
-  " SHIFT-TAB will go back
-  nnoremap <silent> <S-Tab> :tabprevious<CR>
+  " " Tab in general mode will move to text tab
+  " nnoremap <silent> <Tab> :tabnext<CR>
+  " " SHIFT-Tab will go back
+  " nnoremap <silent> <S-Tab> :tabprevious<CR>
+
+  " Tab and S-Tab  
+  nnoremap <silent> <Tab> :bnext<CR>
+  nnoremap <silent> <S-Tab> :bprevious<CR>
 
   " Move selected line / block of text in visual mode
   " shift + k to move up
@@ -51,8 +55,8 @@ else
   nnoremap <silent> <C-Q> :wq!<CR>
   " Use control-c instead of escape
   nnoremap <silent> <C-c> <Esc>
-  " <TAB>: completion.
-  inoremap <silent> <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+  " <Tab>: completion.
+  inoremap <silent> <expr><Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 
 
   " Better window navigation
